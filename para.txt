@@ -1,0 +1,24 @@
+@karat05 ➜ /workspaces/c- (main) $ g++ -o hw hv.cpp это компилятор потом даем имя файла ./hw 
+
+g++ -o hw hv.cpp
+
+./hw 1>>output 2>>error.log
+
+читать в нее 
+ретурн 0
+а ретурн а
+
+@karat05 ➜ /workspaces/c- (main) $ ps -ax |grep hw
+  30498 pts/3    S+     0:00 ./hw
+  31011 pts/0    S+     0:00 grep --color=auto hw
+
+  #include <iostream>
+int main (){
+ int a;
+    std::cin >> a;
+    std::cout <<"Hello, World"<<std::endl;
+    std::cerr <<"ERROR!"<<std::endl;
+
+ return a;
+
+}
