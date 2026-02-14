@@ -1,6 +1,6 @@
 @karat05 ➜ /workspaces/c- (main) $ g++ -o hw hv.cpp это компилятор потом даем имя файла ./hw 
 
-g++ -o hw hv.cpp
+g++ -o hw hw.cpp
 
 ./hw 1>>output 2>>error.log
 
