@@ -1,29 +1,62 @@
 #include <iostream>
+#include <unistd.h>
 #include <string>
-
-
-void getHelp()
-{
-std::cout <<"Help pls" << ;
-}
- int main(int argc, char*argv[]){
-    std::string helpstring;
-    bool neehelp = false;
-    helpstring = "--help";
-
-
-    for (int i=0; i < argc; i++){
-        std::cout << "argv [" << i <<"] = " <<argv[ i ] << "\n";
-        if(helpstring == argv[i]) {
-            needhelp = true;
-        }
-
-
-
+extern char **environ;
+int main (){
+for(char **env=environ;
+    *env!=nullptr;
+    env++){
+        std::cout<<*env <<std::endl;
     }
-    if (needhelp){
+        pid_t pid=getpid();
+        std::cout<<pid<<std::endl;
 
-    }
+
+//int a;
+//std::cin>>a;
+
+
+
+
+
+
+
+
+
+   // int MEOW=1;
+   // std::cin >> MEOW;
+   //std::cout <<"Hello, world"<<std::endl;
+   //std::cerr <<"ERROR!"<<std::endl;
+
+
+
+
+
+
+
+
+//void getHelp()
+//{
+//std::cout <<"Help pls" << ;
+//}
+// int main(int argc, char*argv[]){
+ //   std::string helpstring;
+ //   bool neehelp = false;
+ //   helpstring = "--help";
+//
+//
+   // for (int i=0; i < argc; i++){
+   //     std::cout << "argv [" << i <<"] = " <<argv[ i ] << "\n";
+  //      if(helpstring == argv[i]) {
+   //         needhelp = true;
+   //     }
+
+
+
+  //  }
+   // if (needhelp){
+
+ //   }
  
  //int main(int argc, char*argv[]){
  //    int nail[9];
@@ -45,7 +78,7 @@ std::cout <<"Help pls" << ;
  //    std::cin >> a;
  //    std::cout <<"Hello, World"<<std::endl;
  //    std::cerr <<"ERROR!"<<std::endl;
-  return 0;
+ // return 0;
  }
  //std::string string;
  //   std::cin >> string;
