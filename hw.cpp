@@ -1,15 +1,31 @@
 #include <iostream>
-#include <unistd.h>
-#include <string>
-extern char **environ;
-int main (){
-for(char **env=environ;
-    *env!=nullptr;
-    env++){
-        std::cout<<*env <<std::endl;
-    }
-        pid_t pid=getpid();
-        std::cout<<pid<<std::endl;
+#include "stone.h" 
+
+int main(){
+    getHelp();
+}
+
+//header guard
+
+
+
+
+
+
+
+
+
+//#include <unistd.h>
+//#include <string>
+//extern char **environ;
+//int main (){
+//for(char **env=environ;
+   // *env!=nullptr;
+   // env++){
+   //     std::cout<<*env <<std::endl;
+   // }
+   //     pid_t pid=getpid();
+  //      std::cout<<pid<<std::endl;
 
 
 //int a;
@@ -79,7 +95,7 @@ for(char **env=environ;
  //    std::cout <<"Hello, World"<<std::endl;
  //    std::cerr <<"ERROR!"<<std::endl;
  // return 0;
- }
+ 
  //std::string string;
  //   std::cin >> string;
  //   if(string=="--help"){

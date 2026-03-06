@@ -31,3 +31,40 @@ gethelp вынести в отдельную библиотеку
 сборка соостотической должны перейти в динамическую библиотеку
 подтвердить
 для подтверждения ldd 
+
+
+
+
+
+main(argc)
+--help
+gethelp hool
+gethelp f()
+env auto
+    votsiha
+
+
+
+    ---------------------
+    stone.cpp
+    #include <iostream>
+#define Author "Yarik"
+
+void getHelp(){
+    std::cout << "Autor" << "\n";
+}
+--------------
+hw.cpp
+#include <iostream>
+#include "stone.h" 
+
+int main(){
+    getHelp();
+}
+
+//header guard
+----------------
+stone.h
+#pragma once
+
+void getHelp();
